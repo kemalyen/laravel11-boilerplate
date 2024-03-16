@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class ListProducts extends Component
 {
-    #[Layout('layouts.app')] 
+    #[Layout('layouts.main')]
     public function render()
     {
         return view('livewire.list-products');
