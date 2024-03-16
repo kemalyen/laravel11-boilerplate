@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Livewire\ListProducts;
+use App\Livewire\Pages\ListProducts;
 
 Route::view('/', 'welcome');
 
@@ -12,6 +12,7 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
 
 
 Route::get('/products', ListProducts::class);

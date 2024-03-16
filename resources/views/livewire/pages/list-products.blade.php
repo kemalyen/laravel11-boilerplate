@@ -10,6 +10,9 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     {{ __("List of the products will be here") }}
+
+                    <livewire:product-table/>
+
                 </div>
             </div>
         </div>
