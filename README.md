@@ -10,14 +10,15 @@ An easy starter project for Laravel.
 - Powergrid
 
 Todo: 
-
+- Mary UI https://mary-ui.com/
 - Some example forms
 - File Upload and Handling
 - Rest API Resources
 - Queue Management
 - Integration testing with PEST
 
-And finally Blade UI for components.
+And finally Blade UI(*) for components. 
+* I will give a try with Mary UI instead of Blade UI
 
 
 ## License
