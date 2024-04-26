@@ -22,8 +22,6 @@ return new class extends Migration
             $table->boolean('status')->default(false);  
             $table->double('price')->default(0);
             $table->unsignedInteger('quantity')->default(0);
-            $table->json('options')->nullable();   
-            $table->json('option_values')->nullable();   
             $table->timestamps();
         });
     }
