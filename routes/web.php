@@ -9,7 +9,10 @@ Route::view('/', 'welcome');
 
 Route::get('debug', function(){
 
-    Log::info('Your message is info');  
+    Log::info('Your message is info', [
+        'name' => 'Kemal',
+        'data' => ['books' => 'books', 'products' => 'products'],
+    ]);  
     Log::error("This is an test ERROR log event");
 
     $r = DB::table('users11')->select('usernamess')->get();

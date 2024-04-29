@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('datetime')->nullable();
             $table->longText('context')->nullable();
             $table->text('extra')->nullable();
+            $table->dateTime('logged_at');
             $table->timestamps();
         });
     }
