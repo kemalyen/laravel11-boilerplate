@@ -1,6 +1,6 @@
 <?php
 
-use Kemalyen\Logger\Logger;
+use Kemalyen\Logger\DatabaseLogger;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -54,8 +54,9 @@ return [
     'channels' => [
 
         'db' => [
-            'driver' => 'monolog',
-            'handler'    => Logger::class,
+            'driver' => 'custom',
+            'via'    => DatabaseLogger::class,
+            'ignore_exceptions' => false,
         ],
 
         'stack' => [

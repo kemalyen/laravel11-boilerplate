@@ -2,13 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Pages\ListProducts;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 
 Route::view('/', 'welcome');
 
 Route::get('debug', function(){
 
-    Log::channel('db')->info('Your message');
+    Log::info('Your message is info');  
+    Log::error("This is an test ERROR log event");
+
+    $r = DB::table('users11')->select('usernamess')->get();
+
+    return $r;  
 });
 
 Route::view('dashboard', 'dashboard')
